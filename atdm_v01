@@ -1,0 +1,356 @@
+/* MACREC_COMMENT_BEGIN                                                         
+/* 半自動製図マクロ                                                             
+/* 作成 2023.4.15	t.nagase        			                
+/*                                                                              
+/*                                                                              
+/*                                                                              
+/*                                                                              
+/*                                                                              
+/* MACREC_COMMENT_END                                                           
+@ION 
+/*標準要素寸法を入れる                                                          
+;FDIM                                                                           
+;ENTY                                                                           
+;RAD                                                                            
+;STA                                                                            
+;SETVIEW                                                                        
+..VIEWTP /3/                                                                    
+..VIEWFT /1/                                                                    
+..VIEWRI /2/                                                                    
+..VIEWWL /5/                                                                    
+..VIEWRE /4/                                                                    
+..VIEWWB /6/                                                                    
+..DISPTP /0/                                                                    
+..DISPFT /0/                                                                    
+..DISPRI /0/                                                                    
+..DISPWL /0/                                                                    
+..DISPRE /0/                                                                    
+..DISPWB /0/                                                                    
+..CLINTY /0/                                                                    
+..CLNOFS /3.000000/                                                             
+..CLNRAT /10.000000/                                                            
+..RSDFLG /0/                                                                    
+..E2DSPA /16.000000/                                                            
+0 0 0. ,                                                                        
+@GO                                                                             
+@GO                                                                             
+@ION                                                                            
+/*図面化にて六面図を作成する                                              
+;DIMSW                                                                          
+@GO                                                                             
+;CRTVW                                                                          
+;MENUCVST                                                                       
+;PUT                                                                            
+0 0 0. ,                                                                        
+800 0 ,                                                                         
+1600 0 ,                                                                        
+-800 0 ,                                                                        
+0 800 ,                                                                         
+0 -800 ,                                                                        
+@ZOOMFUL                                                                        
+@ION                                                                            
+/*各ビューに陰線表示する                                                        
+@DSPBOX                                                                         
+;CRTVW                                                                          
+;MENUCVEX                                                                       
+;MENUCVOP                                                                       
+0 0 ,                                                                           
+..DLGSTA /1/                                                                    
+..RNDSUP /0.000000/                                                             
+..CMFSUP /0.000000/                                                             
+..HIDDEN /1/                                                                    
+..ACCURT /0/                                                                    
+..SMOOTH /0/                                                                    
+..CENLNE /1/                                                                    
+..CENSTL /1/                                                                    
+..CENVAL /3.000000/                                                             
+..UPLYNM /0/                                                                    
+..TRMCLR /0/                                                                    
+..DSCALE /1.000000/                                                             
+..PCNLNE /1/                                                                    
+..LINCTR /1/                                                                    
+@DSPBOX                                                                         
+;CRTVW                                                                          
+;MENUCVEX                                                                       
+;MENUCVOP                                                                       
+800 0 ,                                                                         
+..DLGSTA /1/                                                                    
+..RNDSUP /0.000000/                                                             
+..CMFSUP /0.000000/                                                             
+..HIDDEN /1/                                                                    
+..ACCURT /0/                                                                    
+..SMOOTH /0/                                                                    
+..CENLNE /1/                                                                    
+..CENSTL /1/                                                                    
+..CENVAL /3.000000/                                                             
+..UPLYNM /0/                                                                    
+..TRMCLR /0/                                                                    
+..DSCALE /1.000000/                                                             
+..PCNLNE /1/                                                                    
+..LINCTR /1/                                                                    
+@DSPBOX                                                                         
+;CRTVW                                                                          
+;MENUCVEX                                                                       
+;MENUCVOP                                                                       
+1600 0 ,                                                                        
+..DLGSTA /1/                                                                    
+..RNDSUP /0.000000/                                                             
+..CMFSUP /0.000000/                                                             
+..HIDDEN /1/                                                                    
+..ACCURT /0/                                                                    
+..SMOOTH /0/                                                                    
+..CENLNE /1/                                                                    
+..CENSTL /1/                                                                    
+..CENVAL /3.000000/                                                             
+..UPLYNM /0/                                                                    
+..TRMCLR /0/                                                                    
+..DSCALE /1.000000/                                                             
+..PCNLNE /1/                                                                    
+..LINCTR /1/                                                                    
+@DSPBOX                                                                         
+;CRTVW                                                                          
+;MENUCVEX                                                                       
+;MENUCVOP                                                                       
+-800 0 ,                                                                        
+..DLGSTA /1/                                                                    
+..RNDSUP /0.000000/                                                             
+..CMFSUP /0.000000/                                                             
+..HIDDEN /1/                                                                    
+..ACCURT /0/                                                                    
+..SMOOTH /0/                                                                    
+..CENLNE /1/                                                                    
+..CENSTL /1/                                                                    
+..CENVAL /3.000000/                                                             
+..UPLYNM /0/                                                                    
+..TRMCLR /0/                                                                    
+..DSCALE /1.000000/                                                             
+..PCNLNE /1/                                                                    
+..LINCTR /1/                                                                    
+@DSPBOX                                                                         
+;CRTVW                                                                          
+;MENUCVEX                                                                       
+;MENUCVOP                                                                       
+0 800 ,                                                                         
+..DLGSTA /1/                                                                    
+..RNDSUP /0.000000/                                                             
+..CMFSUP /0.000000/                                                             
+..HIDDEN /1/                                                                    
+..ACCURT /0/                                                                    
+..SMOOTH /0/                                                                    
+..CENLNE /1/                                                                    
+..CENSTL /1/                                                                    
+..CENVAL /3.000000/                                                             
+..UPLYNM /0/                                                                    
+..TRMCLR /0/                                                                    
+..DSCALE /1.000000/                                                             
+..PCNLNE /1/                                                                    
+..LINCTR /1/                                                                    
+@DSPBOX                                                                         
+;CRTVW                                                                          
+;MENUCVEX                                                                       
+;MENUCVOP                                                                       
+0 -800 ,                                                                        
+..DLGSTA /1/                                                                    
+..RNDSUP /0.000000/                                                             
+..CMFSUP /0.000000/                                                             
+..HIDDEN /1/                                                                    
+..ACCURT /0/                                                                    
+..SMOOTH /0/                                                                    
+..CENLNE /1/                                                                    
+..CENSTL /1/                                                                    
+..CENVAL /3.000000/                                                             
+..UPLYNM /0/                                                                    
+..TRMCLR /0/                                                                    
+..DSCALE /1.000000/                                                             
+..PCNLNE /1/                                                                    
+..LINCTR /1/                                                                    
+@ION                                                                            
+/*各ビューの寸法線を複写する                                                    
+@SCAN                                                                           
+/DEL/                                                                           
+/#PNT/                                                                          
+/#LIN/                                                                          
+/#CIR/                                                                          
+/#ARC/                                                                          
+/#ELL/                                                                          
+/#AEL/                                                                          
+/#SPL/                                                                          
+/#CREF/                                                                         
+/#PREF/                                                                         
+/#ASS/                                                                          
+/#CSYM/                                                                         
+/#PLY/                                                                          
+@GO                                                                             
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+@ZOOMD1                                                                         
+;XSOPW2                                                                         
+=1                                                                              
+=2                                                                              
+/!-XZ/                                                                          
+.MSG /YES/                                                                      
+;COPY3                                                                          
+@IOFF                                                                           
+;GRM                                                                            
+@WIN                                                                            
+S 1 X -50000 Y -50000 Z 0.000000 ,                                              
+S 1 X 50000 Y 50000 Z 0.000000 ,                                                
+@GO                                                                             
+.DX 0.0                                                                         
+.DY 0.0                                                                         
+.NUM 1                                                                          
+:                                                                               
+;XSOPW2                                                                         
+=1                                                                              
+=2                                                                              
+/!XY/                                                                           
+.MSG /YES/                                                                      
+;COPY3                                                                          
+@WIN                                                                            
+S 1 X -50000 Y -50000 Z 0.000000 ,                                              
+S 1 X 50000 Y 50000 Z 0.000000 ,                                                
+@GO                                                                             
+@GO                                                                             
+;XSOPW2                                                                         
+=1                                                                              
+=2                                                                              
+/!YZ/                                                                           
+.MSG /YES/                                                                      
+;COPY3                                                                          
+@WIN                                                                            
+S 1 X -50000 Y -50000 Z 0.000000 ,                                              
+S 1 X 50000 Y 50000 Z 0.000000 ,                                                
+@GO                                                                             
+@GO                                                                             
+;XSOPW2                                                                         
+=1                                                                              
+=2                                                                              
+/!-YZ/                                                                          
+.MSG /YES/                                                                      
+;COPY3                                                                          
+@WIN                                                                            
+S 1 X -50000 Y -50000 Z 0.000000 ,                                              
+S 1 X 50000 Y 50000 Z 0.000000 ,                                                
+@GO                                                                             
+@GO                                                                             
+;XSOPW2                                                                         
+=1                                                                              
+=2                                                                              
+/!X-Y/                                                                          
+.MSG /YES/                                                                      
+;COPY3                                                                          
+@WIN                                                                            
+S 1 X -50000 Y -50000 Z 0.000000 ,                                              
+S 1 X 50000 Y 50000 Z 0.000000 ,                                                
+@GO                                                                             
+@GO                                                                             
+;XSOPW2                                                                         
+=1                                                                              
+=2                                                                              
+/!XZ/                                                                           
+.MSG /YES/                                                                      
+;COPY3                                                                          
+@WIN                                                                            
+S 1 X -50000 Y -50000 Z 0.000000 ,                                              
+S 1 X 50000 Y 50000 Z 0.000000 ,                                                
+@GO                                                                             
+@GO                                                                             
+@ZOOMFUL                                                                        
+@ION                                                                            
+/*3D上の要素寸法を削除する                                                      
+@SCAN                                                                           
+/ADD/                                                                           
+/#PNT/                                                                          
+/#LIN/                                                                          
+/#CIR/                                                                          
+/#ARC/                                                                          
+/#ELL/                                                                          
+/#AEL/                                                                          
+/#SPL/                                                                          
+/#CREF/                                                                         
+/#PREF/                                                                         
+/#ASS/                                                                          
+/#CSYM/                                                                         
+/#PLY/                                                                          
+@GO                                                                             
+;DIMSW                                                                          
+@GO                                                                             
+;ERASE                                                                          
+;TYP                                                                            
+.TYPE 21                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 22                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 24                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 25                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 26                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 27                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 28                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 29                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 34                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 37                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 42                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 43                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 44                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 45                                                                        
+:                                                                               
+@GO                                                                             
+.TYPE 2                                                                         
+:                                                                               
+@GO                                                                             
+;OPT                                                                            
+@ION                                                                            
+/*図面を更新し、次の操作コマンドに変更                                          
+;DIMSW                                                                          
+@GO                                                                             
+;CRTVW                                                                          
+;MENUCVRE                                                                       
+;CVREEXEC                                                                       
+..UPDFLG /1/                                                                    
+..COMFLG /0/                                                                    
+..LINCTR /0/                                                                    
+;VWTRNS                                                                         
+@HIT                                                                            
+@IW 8                                                                           
+@JON2                                                                           
